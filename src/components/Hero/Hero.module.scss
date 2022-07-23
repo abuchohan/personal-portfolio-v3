@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+
+.hero-content {
+    position: absolute;
+    width: 1280px;
+    bottom: 56%;
+    left: 5vw;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.hero-title {
+
+    color: $text-color;
+    margin: 0;
+}
+
+.hero-title-secondary {
+
+    color: $text-color;
+    font-size: 48px;
+    margin: 0;
+}
+
+.section {
+    position: relative;
+    :global {
+        canvas {
+        position: absolute;
+        }
+    }
+}
+
+
+    .hero-waves {
+        overflow: hidden;
+        display: flex;  
+        justify-content: space-around;
+    }
+
+
+

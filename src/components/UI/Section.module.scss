@@ -1,6 +1,10 @@
 @import '../../variables.scss';
 
 .background {
-    padding: 40px;
     background-color: $background-alt;
+}
+
+.section-content {
+    max-width: 1280px;
+    margin: 0 auto;
 }

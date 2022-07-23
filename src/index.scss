@@ -3,12 +3,13 @@
 @for $i from 1 through 6 {
     h#{$i} {
         font-size: 16px + 8 * (6 - $i);
+        color: $text-color;
     }
 }
 
 .section-title {
     color: $text-color;
-    padding-bottom: 40px;
+    max-width: 500px;
 
     &::before {
         content: '';
@@ -21,12 +22,10 @@
     }
 }
 
-.secondary {
-    color: red;
-    font-size: 60px;
+a {
+    color: $accent;
 }
-
-.highlight {
+.accent-highlight {
     color: $accent;
 }
 
@@ -41,6 +40,10 @@
     max-width: 590px;
     color: $text-color;
     padding-bottom: 20px;
+}
+
+.spacing {
+    padding: 40px;
 }
 
 body {
@@ -66,3 +69,24 @@ p {
 button {
     border: none;
 }
+
+.loader:empty {
+    position: absolute;
+    top: calc(50% - 4em);
+    left: calc(50% - 4em);
+    width: 6em;
+    height: 6em;
+    border: 1.1em solid rgba(0, 0, 0, 0.2);
+    border-left: 1.1em solid #000000;
+    border-radius: 50%;
+    animation: load8 1.1s infinite linear;
+  }
+  
+  @keyframes load8 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
