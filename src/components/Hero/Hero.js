@@ -1,5 +1,4 @@
 import styles from './Hero.module.scss';
-import particleWave from './particlewave';
 
 const Hero = () => {
     return (
