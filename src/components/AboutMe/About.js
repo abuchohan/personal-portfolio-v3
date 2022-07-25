@@ -1,7 +1,7 @@
 import Button from '../UI/Button';
 import Section from '../UI/Section';
 
-import CV from './Assets/Abu CV v3.3.pdf'
+import CV from './Assets/Abu CV v3.3.pdf';
 
 const About = () => {
     return (
@@ -10,16 +10,18 @@ const About = () => {
                 About <span className='accent-highlight'> Me</span>
             </h1>
             <p className={'paragraph'}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                A Web Developer on the journey to become a full developer.
+                Focusing on a logical and accessible approach to current
+                problems. Technologically competent and fascinated with current
+                strides in the industry.  
+                <br />
+                <br />
+                Outside of work i&#39;m a bit of a thrill
+                seeker, i love the outdoors and the gym. Currently training for
+                a <a href="https://toughmudder.co.uk/">tough mudder</a> challenge!
             </p>
-            <a href={CV} target="_blank" rel="noreferrer">
-                <Button >My CV</Button>
+            <a href={CV} target='_blank' rel='noreferrer'>
+                <Button>My CV</Button>
             </a>
         </Section>
     );
