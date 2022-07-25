@@ -10,7 +10,7 @@ const About = () => {
                 About <span className='accent-highlight'> Me</span>
             </h1>
             <p className={'paragraph'}>
-                A Web Developer on the journey to become a full developer.
+                A Web Developer on the journey to become a stack full developer.
                 Focusing on a logical and accessible approach to current
                 problems. Technologically competent and fascinated with current
                 strides in the industry.  
