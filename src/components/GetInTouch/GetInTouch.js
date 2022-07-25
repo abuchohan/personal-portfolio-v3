@@ -4,7 +4,7 @@ import styles from './GetInTouch.module.css';
 
 const GetInTouch = () => {
     return (
-        <Section>
+        <Section light>
             <h3 className={`section-title ${styles['title']}`}>
                 Intrested in working with me or perhaps just{' '}
                 <span className='accent-highlight'>talk?</span>

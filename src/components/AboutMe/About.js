@@ -3,7 +3,7 @@ import Section from '../UI/Section';
 
 const About = () => {
     return (
-        <Section light={true}>
+        <Section>
             <h1 className='section-title'>
                 About <span className='accent-highlight'> Me</span>
             </h1>

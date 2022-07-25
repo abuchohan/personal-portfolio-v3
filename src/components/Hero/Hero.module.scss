@@ -1,42 +1,138 @@
 @import '../../variables.scss';
-
-.hero-content {
-    position: absolute;
-    width: 1280px;
-    bottom: 56%;
-    left: 5vw;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-}
-.hero-title {
-
-    color: $text-color;
-    margin: 0;
-}
-
-.hero-title-secondary {
-
-    color: $text-color;
-    font-size: 48px;
-    margin: 0;
-}
-
-.section {
+.hero {
+    height: 600px;
+    border-radius: 14px;
+    border: 2px solid $accent;
     position: relative;
-    :global {
-        canvas {
-        position: absolute;
+
+    &__title {
+        color: $text-color;
+        margin: 0;
+        &__container {
+            background-color: $background-alt;
+            width: auto;
+            position: absolute;
+            padding: 10px;
+            top: 23%;
+            left: -25px;
+
+
+        }
+        &__secondary {
+            color: $text-color;
+            font-size: 48px;
+            margin: 0;
         }
     }
 }
 
+.shapes {
+    background-color: $background-alt;
+    &__container {
+        animation: bobble 5s ease-in-out infinite;
+        animation-fill-mode: both;
+        position: absolute;
+        background-color: $background-alt;
+        width: 133px;
+        height: 129px;
+        padding: 10px;
 
-    .hero-waves {
-        overflow: hidden;
-        display: flex;  
-        justify-content: space-around;
+        & div {
+            border-radius: 14px;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        & :nth-child(2) {
+            animation: bobble-more 5s ease-in-out infinite;
+            background-color: $text-color;
+            z-index: 2;
+        }
+
+        &__one {
+
+            right: 10%;
+            top: -41px;
+            border-radius: 14px;
+            & :nth-child(1) {
+                background-color: $accent;
+                z-index: 3;
+            }
+            & :nth-child(2) {
+                transform: translate(45px, 45px) scale(0.7);
+            }
+        }
+
+        &__two {
+            right: 2%;
+            bottom: -73px;
+            border-radius: 14px;
+            & :nth-child(1) {
+                background-color: $accent;
+                z-index: 1;
+            }
+            & :nth-child(2) {
+                transform: translate(45px, 45px) scale(0.7);
+            }
+            
+        }
+        &__three {
+            left: -40px;
+            top: 75%;
+            border-radius: 14px;
+            height: 99px;
+            transition: all .3s ease-in-out;
+
+            & :nth-child(1) {
+                background-color: $accent;
+                z-index: 1;
+            }
+            & :nth-child(2) {
+                transform: translate(45px, -45px) scale(0.7);
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .shapes__container__three {
+        opacity: 0;
+    }
+}
+
+@keyframes bobble {
+    0% {
+        
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bobble-more {
+    0% {
+        
+        transform: translate(45px, 45px) scale(0.7);
+    }
+
+    50% {
+        transform: translate(45px, 35px) scale(0.7);
+    }
+
+    100% {
+        transform: translate(45px, 45px) scale(0.7);
     }
 
 
-
+}
