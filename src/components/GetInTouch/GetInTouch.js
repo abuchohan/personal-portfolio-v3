@@ -17,7 +17,9 @@ const GetInTouch = () => {
                     </span>
                 </a>
             </p>
-            <Button>Click Me!</Button>
+            <a href="mailto:abuchohan@hotmail.co.uk">
+                <Button>Get in touch</Button>
+            </a>
         </Section>
     );
 };

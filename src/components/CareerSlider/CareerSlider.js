@@ -41,7 +41,7 @@ const CAREER_DATA = [
 const CareerSlider = () => {
     return (
         <>
-            <Section>
+            <Section onlyContainsTitle>
                 <h2 id="your-element-id" className='section-title'>Slider</h2>
 
             </Section>
@@ -52,7 +52,7 @@ const CareerSlider = () => {
                     <div className={`${styles['slider__element__date__wrapper']} ${styles.flex}`}>
                         {CAREER_DATA.map(job => {
                             return (
-                                <div className={` ${styles['slider__element__date']} ${job.isCurrent ? styles['slider__element__date--current'] : ''}`}>
+                                <div key={job.id + job.year} className={` ${styles['slider__element__date']} ${job.isCurrent ? styles['slider__element__date--current'] : ''}`}>
                                     {job.year}
                                     <div className={styles['slider__element__date__line']}></div>
                                 </div>
@@ -62,11 +62,9 @@ const CareerSlider = () => {
                     <div className={`${styles['slider__element__cards']} ${styles.flex}`}>
                         {CAREER_DATA.map(job => {
                             return (
-                                <>
-                                    <div className={`${styles['slider__element']} ${job.isCurrent ? styles['slider__element--current'] : ''}`}>
-                                        <img src={job.logo} alt={`${job.name} Logos`}/>
-                                    </div>
-                                </>
+                                <div key={job.id} className={`${styles['slider__element']} ${job.isCurrent ? styles['slider__element--current'] : ''}`}>
+                                    <img src={job.logo} alt={`${job.name} Logos`}/>
+                                </div>
                             )
                         })}
                     </div>

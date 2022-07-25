@@ -4,10 +4,6 @@
     padding: 110px 40px;
 }
 
-.noPadding {
-    padding: 0;
-}
-
 .maxWidth {
     max-width: max-content !important;
 }
@@ -18,8 +14,24 @@
 
 .section-content {
     max-width: 1280px;
-    margin-left: calc(50% - 630px);
+    margin-left: calc(50% - 640px);
 }
+
+.spacing {
+    padding: 80px 40px ;
+}
+
+.onlyTitle {
+    padding: 40px;
+    & h2 {
+        margin-bottom: 0;
+    }
+}
+
+.noPadding {
+    padding: 0 0 90px 0;
+}
+
 
 @media screen and (max-width: 1390px) {
     .section-content {

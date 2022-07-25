@@ -1,6 +1,8 @@
 import Button from '../UI/Button';
 import Section from '../UI/Section';
 
+import CV from './Assets/Abu CV v3.3.pdf'
+
 const About = () => {
     return (
         <Section>
@@ -16,7 +18,9 @@ const About = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <Button>Click Me!</Button>
+            <a href={CV} target="_blank" rel="noreferrer">
+                <Button >My CV</Button>
+            </a>
         </Section>
     );
 };
