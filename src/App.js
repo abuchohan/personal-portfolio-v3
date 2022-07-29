@@ -11,8 +11,8 @@ function App() {
         <>
             <Hero />
             <CareerSlider />
-            <TechSlider />
             <About />
+            <TechSlider />
             <GetInTouch />
             <Footer />
         </>

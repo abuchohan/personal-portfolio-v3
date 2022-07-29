@@ -42,7 +42,7 @@ const CareerSlider = () => {
     return (
         <>
             <Section onlyContainsTitle>
-                <h2 id="your-element-id" className='section-title'>Slider</h2>
+                <h2 id="your-element-id" className='section-title'>Where I've Been</h2>
 
             </Section>
 

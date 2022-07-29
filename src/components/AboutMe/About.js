@@ -5,7 +5,7 @@ import CV from './Assets/Abu CV v3.3.pdf';
 
 const About = () => {
     return (
-        <Section>
+        <Section light>
             <h1 className='section-title'>
                 About <span className='accent-highlight'> Me</span>
             </h1>

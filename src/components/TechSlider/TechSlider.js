@@ -65,10 +65,10 @@ const TECH_STACK_DATA = [
 const TechSlider = () => {
     return (
         <>
-            <Section light onlyContainsTitle>
-                <h2 className='section-title'> This is the tech i use</h2>
+            <Section onlyContainsTitle>
+                <h2 className='section-title'> <span className='accent-highlight'>Tech</span> I Use</h2>
             </Section>
-            <Section light noPadding noMaxWidth>
+            <Section noPadding noMaxWidth>
                 <div className={styles.slider}>
                     {TECH_STACK_DATA.map((tech) => {
                         return (
