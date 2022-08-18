@@ -1,20 +1,20 @@
 import styles from './Section.module.scss';
 
-const Section = (props) => {
+const Section = ({ isHero, light, noPadding, onlyContainsTitle, children, noMaxWidth }) => {
     return (
         <section
             className={`
-                ${styles.spacing} ${props.light ? styles.background: ''}
-                ${props.isHero ? styles.hero : ''} ${props.noPadding ? styles.noPadding : ''} 
-                ${props.onlyContainsTitle  ? styles.onlyTitle : '' }
+                ${styles.spacing} ${light ? styles.background: ''}
+                ${isHero ? styles.hero : ''} ${noPadding ? styles.noPadding : ''} 
+                ${onlyContainsTitle  ? styles.onlyTitle : '' }
             `}
         >
             <div
-                className={`${styles['section-content']} ${props.noMaxWidth
+                className={`${styles['section-content']} ${noMaxWidth
                     ? styles.maxWidth
                     : ''}`}
             >
-                {props.children}
+                {children}
             </div>
         </section>
     );
